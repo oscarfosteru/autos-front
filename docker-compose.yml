@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "82:80"  # El puerto 80 en NGINX se mapea al 8082 en el host
+      - "8082:80"  # El puerto 80 en NGINX se mapea al 8082 en el host
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf  # Asegúrate de que nginx.conf existe en tu proyecto
     networks:
